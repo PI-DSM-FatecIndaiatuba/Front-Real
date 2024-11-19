@@ -12,7 +12,7 @@ const Card = ({title, text, img}: CardProps) => {
       <img className="w-72 max-h-40 rounded-t-xl	" src={img} alt={title}/>
         <div className="p-2">
           <h4 className="text-center mb-4 text-base md:text-lg lg:text-2xl font-gudea-bold">{title}</h4>
-          <p className="text-justify text-xs md:text-sm lg:text-sm box-border">{text}</p>
+          <p className="text-justify text-xs md:text-sm lg:text-sm box-border font-gudea">{text}</p>
         </div>
     </div>
   )
