@@ -3,6 +3,8 @@ import React from 'react'
 import { navItems } from "../../constants"
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from 'next/image';
+import myImage from '../../assets/Indaiatuba_brasao.png';
 
 
 export const Header = () => {
@@ -15,9 +17,9 @@ export const Header = () => {
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative lg:text-sm">
         <div className="flex justify-between items-center">
-          <div className="flex items-center flex-shrink-0">
-            <img className="h-10 w-10 mr-2" src="../../assets/Indaiatuba_brasao.png" alt="" />
-            <span className="text-xl tracking-tight">Dengue</span>
+          <div className="flex items-center flex-shrink-0 space-x-4">
+            <Image src={myImage.src} alt="description" width={50} height={50} />
+            <span className="text-xl tracking-tight"> Dengue</span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (

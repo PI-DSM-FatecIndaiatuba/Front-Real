@@ -1,6 +1,9 @@
 import React from 'react'
 import { CheckCircle2 } from "lucide-react";
 import { checklistItems } from "../../constants";
+import Image from 'next/image';
+import myImage from '../../assets/angryboianimations-angryboialex.gif';
+
 
 export const Prevecao = () => {
   return (
@@ -12,8 +15,8 @@ export const Prevecao = () => {
       </span>
     </h2>
     <div className="flex flex-wrap justify-center">
-      <div className="p-2 w-full lg:w-1/2">
-        <img src= "../../assets/angryboianimations-angryboialex.gif" alt="mosquito" />
+      <div className="p-2 w-full lg:w-1/2 flex justify-center items-center">
+        <Image src={myImage.src} alt="description" width={450} height={500} />
       </div>
       <div className="pt-12 w-full lg:w-1/2">
         {checklistItems.map((item, index) => (

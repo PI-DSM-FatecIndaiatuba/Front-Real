@@ -4,6 +4,7 @@ import HeroSection from "./Components/Herosection/HeroSection";
 import Prevencao from "./Components/Prevencao/Prevencao";
 import Sintomas from "./Components/Sintomas";
 import Comments from "./Components/Comentarios/Comments";
+import DireitosReservados from "./Components/Direitos/DireitosReservados";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Sintomas/>
       <Comments/>
       <Prevencao/>
+      <DireitosReservados/>
     </>
   );
 }

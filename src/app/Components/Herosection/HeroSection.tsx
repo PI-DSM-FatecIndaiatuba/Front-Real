@@ -1,3 +1,6 @@
+import Image from "next/image";
+import myImage from "../../assets/dengue02-removebg-preview.png";
+
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
@@ -21,6 +24,9 @@ const HeroSection = () => {
         <a href="" className="py-3 px-4 mx-3 rounded-md">
           Saiba mais a seguir
         </a>
+      </div>
+      <div className="flex mt-10 justify-center">
+        <Image src={myImage.src} alt="description" width={500} height={500} />
       </div>
     </div>
   );
