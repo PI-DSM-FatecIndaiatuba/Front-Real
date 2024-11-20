@@ -32,7 +32,7 @@ export const Header = () => {
             </a>
             <a
               href="#"
-              className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"
+              className="bg-gradient-to-r from-blue-500 to-blue-800 py-2 px-3 rounded-md"
             >
               Cadastro de Interesse
             </a>
@@ -58,7 +58,7 @@ export const Header = () => {
               </a>
               <a
                 href="#"
-                className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800"
+                className="py-2 px-3 rounded-md bg-gradient-to-r from-blue-500 to-blue-800"
               >
                 Cadastro de Interesse
               </a>

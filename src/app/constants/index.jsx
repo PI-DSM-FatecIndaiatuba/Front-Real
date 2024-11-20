@@ -1,9 +1,9 @@
-import { BotMessageSquare } from 'lucide-react';
-import { BatteryCharging } from 'lucide-react';
-import { Fingerprint } from 'lucide-react';
-import { ShieldHalf } from 'lucide-react';
-import { PlugZap } from 'lucide-react';
-import { GlobeLock } from 'lucide-react';
+import { Thermometer } from 'lucide-react';
+import { Shell } from 'lucide-react';
+import { Frown } from 'lucide-react';
+import { ZapOff } from 'lucide-react';
+import { SprayCan } from 'lucide-react';
+import { Unplug } from 'lucide-react';
 
 import user1 from '../assets/profile-pictures/user1.jpg';
 import user2 from '../assets/profile-pictures/user2.jpg';
@@ -60,40 +60,40 @@ export const testimonials = [
 
 export const features = [
   {
-    icon: <BotMessageSquare />,
-    text: 'Drag-and-Drop Interface',
+    icon: <Thermometer />,
+    text: 'Febre alta súbita',
     description:
-      'Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.',
+      'Geralmente acima de 39°C, a febre surge de forma rápida e intensa, sendo um dos primeiros sinais da doença.',
   },
   {
-    icon: <Fingerprint />,
-    text: 'Multi-Platform Compatibility',
+    icon: <Frown />,
+    text: 'Dor de cabeça intensa',
     description:
-      'Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.',
+      'A dor geralmente ocorre na região frontal ou atrás dos olhos e pode ser muito forte.',
   },
   {
-    icon: <ShieldHalf />,
-    text: 'Built-in Templates',
+    icon: <ZapOff />,
+    text: 'Dor muscular e nas articulações',
     description:
-      'Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.',
+      'A dor no corpo, especialmente nas costas, pernas e articulações, é um sintoma comum, o que leva a popularizar o termo "febre quebra-ossos".',
   },
   {
-    icon: <BatteryCharging />,
-    text: 'Real-Time Preview',
+    icon: <Shell />,
+    text: 'Náuseas e vômitos',
     description:
-      'Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.',
+      'Os pacientes podem sentir enjoo e, em alguns casos, vomitar, o que contribui para a desidratação.',
   },
   {
-    icon: <PlugZap />,
-    text: 'Collaboration Tools',
+    icon: <SprayCan />,
+    text: 'Manchas vermelhas na pele',
     description:
-      'Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.',
+      'Erupções cutâneas podem aparecer após alguns dias de febre e geralmente começam no tronco e se espalham para os membros.',
   },
   {
-    icon: <GlobeLock />,
-    text: 'Analytics Dashboard',
+    icon: <Unplug />,
+    text: 'Cansaço e fraqueza extrema',
     description:
-      'Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.',
+      'A fadiga é marcante e pode durar por dias após a febre, tornando a recuperação lenta.',
   },
 ];
 
