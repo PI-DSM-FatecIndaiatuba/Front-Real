@@ -99,20 +99,24 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: 'Code merge made easy',
-    description: 'Track the performance of your VR apps and gain insights into user behavior.',
+    title: 'Eliminação de focos de água parada',
+    description:
+      'Elimine ou trate recipientes que acumulem água, como pneus, garrafas e vasos de plantas.',
   },
   {
-    title: 'Review code without worry',
-    description: 'Track the performance of your VR apps and gain insights into user behavior.',
+    title: 'Uso de telas e mosquiteiros',
+    description:
+      'Instale telas nas janelas e use mosquiteiros para evitar picadas, especialmente à noite.',
   },
   {
-    title: 'AI Assistance to reduce time',
-    description: 'Track the performance of your VR apps and gain insights into user behavior.',
+    title: 'Aplicação de inseticidas',
+    description:
+      'Use inseticidas para eliminar mosquitos adultos, com orientação das autoridades de saúde.',
   },
   {
-    title: 'Share work in minutes',
-    description: 'Track the performance of your VR apps and gain insights into user behavior.',
+    title: 'Educação e conscientização',
+    description:
+      'Informe e mobilize a comunidade para eliminar focos de mosquito e prevenir a dengue.',
   },
 ];
 
