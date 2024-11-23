@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Image from 'next/image';
 import myImage from '../../assets/Indaiatuba_brasao.png';
+import Link from 'next/dist/client/link';
 
 
 export const Header = () => {
@@ -32,12 +33,9 @@ export const Header = () => {
             <a href="#" className="py-2 px-3 border rounded-md">
               Casos de Dengue
             </a>
-            <a
-              href="#"
-              className="bg-gradient-to-r from-blue-500 to-blue-800 py-2 px-3 rounded-md"
-            >
+            <Link className="bg-gradient-to-r from-blue-500 to-blue-800 py-2 px-3 rounded-md" href='/Cadastro'>
               Cadastro de Interesse
-            </a>
+            </Link>
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
