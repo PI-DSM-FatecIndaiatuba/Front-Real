@@ -1,16 +1,38 @@
-import './about.css'
+import React from 'react'
+import { features } from "../../constants";
 
-const About = () => {
+export const About = () => {
   return (
-    <div className='bg-white font-gudea pl-12 pr-12 flex items-center justify-between gap-3 box-border'>
-      <div className="text-black md:w-2/5 lg:w-2/5 text-justify">
-        <h1 className='text-xl md:text-2xl lg:text-3xl'>O que é a Dengue?</h1>
-        <br />
-        <p className='text-xs md:text-lg lg:text-2xl'>A dengue é uma doença viral transmitida pela picada do mosquito Aedes aegypti, um vetor que se reproduz principalmente em locais com água parada. Existem quatro tipos do vírus, e uma pessoa pode ter dengue até quatro vezes na vida, cada uma delas causada por um tipo diferente. Em alguns casos, a doença pode evoluir para uma forma mais grave, conhecida como dengue hemorrágica, que exige atenção médica imediata.</p>
+    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
+      <div className="text-center">
+        <span className="bg-neutral-900 text-blue-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase">
+          Sintomas
+        </span>
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
+          Principais sintomas{" "}
+          <span className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">
+            da dengue.
+          </span>
+        </h2>
       </div>
-      <img className='hidden md:block lg:block w-52 md:w-96 lg:w-2/5' src="./imgs/moskitao-real.PNG" alt="Mosquito da dengue" />
+      <div className="flex flex-wrap mt-10 lg:mt-20">
+        {features.map((feature, index) => (
+          <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
+            <div className="flex">
+              <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-blue-700 justify-center items-center rounded-full">
+                {feature.icon}
+              </div>
+              <div>
+                <h5 className="mt-1 mb-6 text-xl">{feature.text}</h5>
+                <p className="text-md p-2 mb-20 text-neutral-500">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
-
 export default About

@@ -1,37 +1,39 @@
-import { text } from 'stream/consumers'
-import Card from '../Card-Sintomas/card'
-import './Sintomas.css'
+import React from 'react'
+import { CheckCircle2 } from "lucide-react";
+import { checklistItems } from "../../constants";
+import Image from 'next/image';
+import myImage from '../../assets/angryboianimations-angryboialex.gif';
 
-const Sintomas = () => {
 
-  const sintomas = [
-    {
-      img: "https://www.gov.br/saude/pt-br/assuntos/noticias/2024/fevereiro/aprenda-a-diferenciar-os-sintomas-da-dengue-e-da-gripe/dengue-ou-gripe.png/@@images/5196f0af-1034-4863-8efa-78bdedaff2c0.png",
-      titulo: "Febre Alta",
-      texto: "Febre alta é quando a temperatura corporal está acima de 39°C. É importante acompanhar a evolução da febre e procurar ajuda médica se houver sinais de piora."
-    },
-
-    {
-      img: "https://cdn.prod.website-files.com/652421babb6bdd7f92f721b7/652421babb6bdd7f92f7234a_o-que-e-dor-nas-articulacoes.jpg",
-      titulo: "Dor nas Articulações",
-      texto: "A dor pode ser intensa e afetar várias articulações do corpo, como as dos pés, mãos, dedos, tornozelos e pulsos."
-    },
-
-    {
-      img: "https://www.saopaulo.sp.gov.br/wp-content/uploads/2024/03/Sintomadengue_750x500-4f077b8a685f5916.jpg",
-      titulo: "Manchas Avermelhadas",
-      texto: "são um dos principais sinais da dengue e surgem em cerca de 50 a 80% dos casos. Elas são uma manifestação cutânea que ocorre quando os vasos sanguíneos se dilatam e podem aparecer entre o terceiro e o quinto dia de febre."
-    }
-  ]
-
+export const Prevecao = () => {
   return (
-    <div className='mt-12 font-gudea'>
-        <h1 className='text-center text-xl md:text-2xl	lg:text-4xl'>Principais Sintomas</h1>
-        <div className='flex justify-around mt-10 flex-wrap	'>
-          {sintomas.map((info) => <Card key={info.titulo} img={info.img} title={info.titulo} text={info.texto}/>)}
-        </div>
+    <div className="mt-20">
+    <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
+      Como podemos{" "}
+      <span className="bg-gradient-to-r from-blue-500 to-blue-800 text-transparent bg-clip-text">
+        combater?
+      </span>
+    </h2>
+    <div className="flex flex-wrap justify-center">
+      <div className="p-2 w-full lg:w-1/2 flex justify-center items-center">
+        <Image src={myImage.src} alt="description" width={450} height={500} />
+      </div>
+      <div className="pt-12 w-full lg:w-1/2">
+        {checklistItems.map((item, index) => (
+          <div key={index} className="flex mb-12">
+            <div className="text-green-400 mx-6 bg-neutral-900 h-10 w-10 p-2 justify-center items-center rounded-full">
+              <CheckCircle2 />
+            </div>
+            <div>
+              <h5 className="mt-1 mb-2 text-xl">{item.title}</h5>
+              <p className="text-md text-neutral-500">{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
+  </div>
   )
 }
 
-export default Sintomas
+export default Prevecao
