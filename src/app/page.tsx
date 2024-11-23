@@ -1,3 +1,4 @@
+"use client"
 import About from "./Components/About/About";
 import Header from "./Components/Header/Header";
 import HeroSection from "./Components/Herosection/HeroSection";

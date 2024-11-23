@@ -32,6 +32,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>{`
+          :root {
+            font-family: var(--font-gudea), sans-serif;
+          }
+        `}</style>
       </head>
       <body className={gudea.variable}>
         {children}

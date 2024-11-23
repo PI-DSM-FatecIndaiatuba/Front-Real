@@ -64,7 +64,7 @@ const Cadastro = () => {
                 </select>
             </div>
 
-            <button className='border border-neutral-700 rounded-xl hover:bg-neutral-700 hover:duration-200 duration-300 text-white p-2 rounded-md mt-20' onClick={envioCadastro} >Cadastrar</button>
+            <button className='bg-gradient-to-r from-blue-500 to-blue-800 rounded-xl hover:bg-neutral-700 hover:duration-200 duration-300 text-white p-2 rounded-md mt-20' onClick={envioCadastro} >Cadastrar</button>
         </form>
 
       </div>
