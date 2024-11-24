@@ -7,13 +7,13 @@ import { ArrowLeftFromLine } from "lucide-react"
 const Cadastro = () => {
 
   const [usuario, setUsuario] = useState<IUser>({
-    name: '',
+    nome: '',
     email: '',
     preferencia: ''
   })
 
   const tudoPreenchido = (usuario: IUser) => {
-    return (usuario.name == '' || usuario.email == '' || usuario.preferencia == '') ? false : true;
+    return (usuario.nome == '' || usuario.email == '' || usuario.preferencia == '') ? false : true;
 }
 
   const envioCadastro = async (e: React.FormEvent) =>{
@@ -46,7 +46,7 @@ const Cadastro = () => {
 
             <div className='flex justify-start flex-col'>
                 <label>Nome</label>
-                <input type="text" className="text-white bg-neutral-700 rounded-xl indent-2 h-8 md:h-10" value={usuario.name} onChange={(e) => setUsuario({...usuario, name: e.target.value})}/>
+                <input type="text" className="text-white bg-neutral-700 rounded-xl indent-2 h-8 md:h-10" value={usuario.nome} onChange={(e) => setUsuario({...usuario, nome: e.target.value})}/>
             </div>
 
             <div className='flex justify-start flex-col'>
