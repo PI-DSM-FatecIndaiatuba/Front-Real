@@ -12,9 +12,17 @@ const Cadastro = () => {
     preferencia: ''
   })
 
+  const apagarCampos = () => {
+    setUsuario({
+      nome: '',
+      email: '',
+      preferencia: ''
+    })
+  }
+
   const tudoPreenchido = (usuario: IUser) => {
     return (usuario.nome == '' || usuario.email == '' || usuario.preferencia == '') ? false : true;
-}
+  }
 
   const envioCadastro = async (e: React.FormEvent) =>{
     e.preventDefault()
@@ -27,6 +35,7 @@ const Cadastro = () => {
     try {
         await createUsuario(usuario)
         alert('Cadastro realizado com sucesso!')
+        apagarCampos()
     } catch (error) {
         console.log(error);
         alert('Erro ao cadastrar!')
