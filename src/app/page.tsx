@@ -10,15 +10,16 @@ import Feedback from "./Components/Feedback/Feedback";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Header/>
-      <HeroSection/>
-      <About/>
+      <div id="inicio"><HeroSection/></div>
+      <div id="sintomas"><About/></div>
       <Sintomas/>
-      <Comments/>
+      <div id="comentarios"><Comments/></div>
       <Feedback/>
       <Prevencao/>
-      <DireitosReservados/>
-    </>
+      <div id="contato"><DireitosReservados/></div>
+    </div>
   );
 }
+
