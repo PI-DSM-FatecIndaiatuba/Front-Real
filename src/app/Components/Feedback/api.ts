@@ -3,7 +3,7 @@ export interface IFeedBack {
 }
 
 export const createFeedback = async (dados: IFeedBack) => {
-    const resposta = await fetch('http://localhost:3000/api/feedbacks',{
+    const resposta = await fetch('https://back-api-dengue.onrender.com/api/feedbacks',{
         method: 'POST',
         body: JSON.stringify(dados),
         headers: {

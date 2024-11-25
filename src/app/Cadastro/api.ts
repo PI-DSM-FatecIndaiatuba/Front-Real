@@ -5,7 +5,7 @@ export interface IUser {
 }
 
 export const createUsuario = async (dados: IUser) => {
-    const resposta = await fetch('http://localhost:3000/api/usuarios-interesse',{
+    const resposta = await fetch('https://back-api-dengue.onrender.com/api/usuarios-interesse',{
         method: 'POST',
         body: JSON.stringify(dados),
         headers: {
